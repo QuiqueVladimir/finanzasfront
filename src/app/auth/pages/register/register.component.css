@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-button {
+  background: none;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.sign-up-text {
+  color: rgba(79, 70, 80, 0.89);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+app-register-card {
+  max-width: 400px;
+  width: 100%;
+
+}
+
+app-footer-login {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .columns-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 360px;
+  }
+
+}

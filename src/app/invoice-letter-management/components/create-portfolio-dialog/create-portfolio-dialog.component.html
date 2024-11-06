@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Create New Portfolio</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <mat-label>Portfolio Name</mat-label>
+        <input matInput placeholder="Enter portfolio name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Currency</mat-label>
+        <mat-select>
+          <mat-option value="USD">USD</mat-option>
+          <mat-option value="PEN">PEN</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Creation Date</mat-label>
+        <input matInput [matDatepicker]="picker1" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Discount Date</mat-label>
+        <input matInput [matDatepicker]="picker2" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary">Create</button>
+    <button mat-button color="warn">Cancel</button>
+  </mat-card-actions>
+</mat-card>

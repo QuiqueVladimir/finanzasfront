@@ -1,0 +1,26 @@
+<mat-card class="sign-in-card">
+  <mat-card-content>
+    <p>Username or Email Address</p>
+    <mat-form-field class="indented-input" appearance="outline">
+      <input matInput type="text">
+    </mat-form-field>
+    <div class="password-container">
+      <p>Password</p>
+      <a mat-button class="forgot-password" routerLink="/reset-password">Forgot password?</a>
+    </div>
+    <mat-form-field class="indented-input" appearance="outline">
+      <input matInput type="password">
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button class="sign-in-button" color="primary">Sign In</button>
+  </mat-card-actions>
+</mat-card>
+<mat-card class="new-count">
+  <mat-card-content>
+    <div class="question-container">
+      <p>Don't have an account?</p>
+      <a mat-button class="create-account" routerLink="/register">Create Account</a>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,15 @@
+<mat-card class="portfolio-card" appearance="raised" (click)="navigateToInvoiceList()">
+  <mat-card-header class="card-header">
+    <mat-card-title>PORTFOLIO NAME</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="card-text">Money: %%%DOLAR</p>
+    <p class="card-text">Number of invoices: 1</p>
+    <p class="card-text">Creation Date: 10-11-2024 10:20</p>
+    <p class="card-text">Discount Date: 15-02-2023 23:50</p>
+  </mat-card-content>
+  <mat-card-actions class="card-actions">
+    <button mat-button color="primary" (click)="openEditDialog($event)">Edit</button>
+    <button mat-button color="warn" (click)="openConfirmDeleteDialog($event)">Delete</button>
+  </mat-card-actions>
+</mat-card>

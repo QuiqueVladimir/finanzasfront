@@ -1,0 +1,40 @@
+.portfolio-card {
+  max-width: 400px; /* Tamaño máximo de la tarjeta */
+  margin: 20px auto; /* Centro horizontal y margen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transform: translateY(-5px); /* Efecto al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+.card-header {
+  background-color: #744f9b; /* Color de fondo del header */
+  color: white; /* Color del texto en el header */
+  padding: 10px;
+  border-radius: 5px 5px 0 0; /* Bordes redondeados solo arriba */
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555; /* Color gris suave para el texto */
+  margin: 8px 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  margin-top: 10px;
+}
+
+button {
+  margin-left: 8px; /* Espacio entre botones */
+}
+
+button.mat-button {
+  font-weight: bold;
+  text-transform: uppercase; /* Texto en mayúsculas */
+}

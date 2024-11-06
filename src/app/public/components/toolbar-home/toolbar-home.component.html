@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <button mat-icon-button class="logo-icon" routerLink="/home">
+    <mat-icon>
+      <img src="/home-page/logo.png" alt="icon"/>
+    </mat-icon>
+  </button>
+  <span class="toolbar-title">Noria Interior</span>
+  <ng-container *ngFor="let item of toolbarItems">
+    <button mat-button [routerLink]="item.route">{{ item.label }}</button>
+  </ng-container>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/login">Sing In</button>
+  <button mat-stroked-button routerLink="/register">Sing Up</button>
+</mat-toolbar>
+

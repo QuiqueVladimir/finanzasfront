@@ -1,0 +1,36 @@
+<div class="portfolio-management">
+  <h1>Portfolios</h1>
+
+  <div class="toolbar">
+    <input type="text" placeholder="Search..." class="search-bar">
+
+    <div class="filters">
+      <label for="filter-date">Filter by Date:</label>
+      <select id="filter-date">
+        <option value="creation">Creation Date</option>
+        <option value="discount">Discount Date</option>
+      </select>
+
+      <label for="filter-currency">Filter by Currency:</label>
+      <select id="filter-currency">
+        <option value="PEN">PEN</option>
+        <option value="USD">USD</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="portfolio-list">
+    <app-portfolio-card/>
+    <app-portfolio-card/>
+    <app-portfolio-card/>
+    <app-portfolio-card/>
+    <app-portfolio-card/>
+
+  </div>
+
+  <mat-paginator [length]="totalPortfolios" [pageSize]="9" [pageSizeOptions]="[9]" (page)="onPageChange($event)">
+  </mat-paginator>
+
+  <button mat-raised-button color="primary" class="add-portfolio-button" (click)="openCreatePortfolioDialog()">Add Portfolio</button>
+</div>
+
