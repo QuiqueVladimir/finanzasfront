@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {RegisterCardComponent} from '../../components/components/register-card/register-card.component';
+import {RegisterCardComponent} from '../../components/register-card/register-card.component';
 import {RouterLink} from '@angular/router';
 import {FooterLoginComponent} from '../../components/footer-login/footer-login.component';
 

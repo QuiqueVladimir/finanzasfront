@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {LoginCardComponent} from '../../components/components/login-card/login-card.component';
+import {LoginCardComponent} from '../../components/login-card/login-card.component';
 import {FooterLoginComponent} from '../../components/footer-login/footer-login.component';
 import {MatButton} from '@angular/material/button';
 import {RouterLink} from '@angular/router';

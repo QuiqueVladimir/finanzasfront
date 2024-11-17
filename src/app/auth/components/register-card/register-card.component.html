@@ -2,19 +2,19 @@
   <mat-card-content>
     <p>Name</p>
     <mat-form-field class="indented-input" appearance="outline">
-      <input matInput type="text">
+      <input matInput type="text" [(ngModel)]="name">
     </mat-form-field>
     <p>Username</p>
     <mat-form-field class="indented-input" appearance="outline">
-      <input matInput type="text">
+      <input matInput type="text" [(ngModel)]="username">
     </mat-form-field>
     <p>Email Address</p>
     <mat-form-field class="indented-input" appearance="outline">
-      <input matInput type="email">
+      <input matInput type="email" [(ngModel)]="email">
     </mat-form-field>
     <p>Password</p>
     <mat-form-field class="indented-input" appearance="outline">
-      <input matInput type="password">
+      <input matInput type="password" [(ngModel)]="password">
     </mat-form-field>
     <p>Confirm Password</p>
     <mat-form-field class="indented-input" appearance="outline">
@@ -22,7 +22,7 @@
     </mat-form-field>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button class="register-button" color="primary">Register</button>
+    <button mat-raised-button class="register-button" color="primary" (click)="register()">Register</button>
   </mat-card-actions>
 </mat-card>
 <mat-card class="existing-account">

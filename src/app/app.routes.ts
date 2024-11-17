@@ -16,7 +16,7 @@ export const routes: Routes = [
       {path: '', component: PageNotFoundComponent},
       {path: 'dashboard', component: PageNotFoundComponent },
       {path: 'portfolios', component: PortfolioManagementComponent},
-      {path: 'portfolios/invoice-list', component: InvoiceListComponent}
+      {path: 'portfolios/:id', component: InvoiceListComponent}
     ]
   }
 ];

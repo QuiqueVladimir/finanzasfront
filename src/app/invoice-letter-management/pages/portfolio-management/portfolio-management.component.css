@@ -14,30 +14,10 @@ h1 {
   margin-bottom: 16px;
 }
 
-.search-bar {
-  flex: 1;
-  margin-right: 16px;
-  padding: 8px;
-  font-size: 16px;
-}
-
-.filters {
-  display: flex;
-  align-items: center;
-}
-
-.filters label {
-  margin-right: 8px;
-}
-
-.filters select {
-  margin-right: 16px;
-  padding: 8px;
-  font-size: 16px;
-}
 
 .portfolio-list {
   display: grid;
+  min-height: 550px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 16px;
   margin-bottom: 16px;

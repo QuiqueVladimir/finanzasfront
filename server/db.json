@@ -1,0 +1,140 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan Pérez",
+      "username": "juan.perez",
+      "email": "juan.perez@example.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Maria García",
+      "username": "maria.garcia",
+      "email": "maria.garcia@example.com",
+      "password": "password123"
+    }
+  ],
+  "portfolios": [
+    {
+      "id": 1,
+      "name": "January PortfolioA",
+      "currency": "PEN",
+      "numInvoices": 3,
+      "createdDate": "2024-01-15",
+      "discountDate": "2024-03-15"
+    },
+    {
+      "id": 2,
+      "name": "February Portfolio",
+      "currency": "USD",
+      "numInvoices": 1,
+      "createdDate": "2024-02-01",
+      "discountDate": "2024-02-15"
+    },
+    {
+      "id": 3,
+      "name": "3434",
+      "currency": "PEN",
+      "numInvoices": 0,
+      "createdDate": "2024-11-09T05:00:00.000Z",
+      "discountDate": "2024-11-29T05:00:00.000Z"
+    }
+  ],
+  "userPortfolios": [
+    {
+      "id": 1,
+      "userId": 1,
+      "portfolioId": 1,
+      "status": "active",
+      "creationDate": "2024-01-15",
+      "deletedDate": null
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "portfolioId": 2,
+      "status": "active",
+      "creationDate": "2024-02-01",
+      "deletedDate": null
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "portfolioId": 3,
+      "status": "erased",
+      "creatingDate": "2024-11-14T20:51:09.226Z",
+      "deletedDate": null
+    }
+  ],
+  "invoices": [
+    {
+      "id": 2,
+      "portfolioId": 1,
+      "userId": 1,
+      "invoiceNumber": "L002",
+      "client": "Empresa ABC",
+      "amount": 3000,
+      "issueDate": "2024-01-11T05:00:00.000Z",
+      "dueDate": "2024-01-30",
+      "currency": "USD",
+      "rateType": "Effective",
+      "discountRate": 4.5
+    },
+    {
+      "id": 3,
+      "portfolioId": 2,
+      "userId": 2,
+      "invoiceNumber": "L003",
+      "client": "Empresa LMN",
+      "amount": 7000,
+      "issueDate": "2024-02-05",
+      "dueDate": "2024-02-20",
+      "currency": "USD",
+      "rateType": "Nominal",
+      "discountRate": 3.5
+    },
+    {
+      "id": 4,
+      "portfolioId": 1,
+      "userId": 1,
+      "dueDate": "2024-01-31",
+      "currency": "USD",
+      "invoiceNumber": "L004",
+      "client": "DEM",
+      "amount": 7474,
+      "issueDate": "2024-11-15T05:00:00.000Z",
+      "rateType": "effective",
+      "discountRate": 123
+    },
+    {
+      "id": 5,
+      "portfolioId": 1,
+      "userId": 1,
+      "invoiceNumber": "dadad",
+      "client": "adad",
+      "amount": 2323,
+      "issueDate": "2024-11-19T05:00:00.000Z",
+      "dueDate": "2024-01-31",
+      "currency": "PEN",
+      "rateType": "effective",
+      "discountRate": 34
+    }
+  ],
+  "summaries": [
+    {
+      "portfolioId": 1,
+      "totalInvoices": 2,
+      "totalAmount": 8000,
+      "currency": "PEN",
+      "discountDate": "2024-01-31"
+    },
+    {
+      "portfolioId": 2,
+      "totalInvoices": 1,
+      "totalAmount": 7000,
+      "currency": "USD",
+      "discountDate": "2024-02-15"
+    }
+  ]
+}
